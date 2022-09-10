@@ -1,0 +1,188 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+ body {
+    background-color: #ab4493; 
+    padding: 20px;
+ }
+ header {
+    max-width: 1000px;
+    min-height: 130px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+36,6d0019+95 */
+   background: #a90329; /* Old browsers */
+   background: -moz-linear-gradient(top,  #a90329 36%, #6d0019 95%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top,  #a90329 36%,#6d0019 95%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom,  #a90329 36%,#6d0019 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+ }
+ body{
+    height: 100%; 
+    font-family: 'Noto Sans', sans-serif;
+    
+  }
+  
+ #logo {
+    width: 320px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;    
+    animation: 1s entradalogo 1;
+ }
+ #logo img:hover {
+    filter: grayscale(100%);
+ }
+
+ #menuh {
+   max-width: 1000px;
+   min-width: 50px;
+   background: black;
+   margin: 0 auto;
+ }
+
+ #menuh ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+ }
+
+ #menuh a {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background: #000;
+    font-family: Arial;
+    font-size: 18px;
+ }
+
+ #menuh ul ul {
+    display: none;
+    position: absolute;
+ }
+
+ #menu ul li:hover ul {
+    display: block;
+ }
+
+ #menuh a:hover {
+    background: #069;
+ }
+
+ #banner {
+    max-width: 1000px;
+    min-height: 130px;
+    background: #fff;
+    margin: 0 auto;
+ }
+
+ #banner img {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 250px;
+    margin: auto;
+ }
+
+ #contenedor {
+    max-width: 1000px;
+    min-height: 700px;
+    background: #fff;
+    margin: 0 auto;
+ }
+
+ #menu-v {
+    width: 300px;
+    min-height: 250px;
+    background: rgb(204, 204, 204);
+    float: left;
+ }
+
+ #menu-v ul {
+    list-style: none;
+    padding: 10px;
+ }
+
+ #menu-v a{
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-family: arial;
+    font-size: 18px;
+    background: #0716e9;
+    border-radius: 10px;
+ }
+
+ #menu-v a:hover {
+   background: rgb(240, 118, 5);
+ }
+
+ #menu-v a:hover img {
+    animation: 1s rotacion 1;
+ }
+ #contenido h2 {
+    text-align: center;
+    margin-bottom: 30px; 
+ }
+
+ #contenido h1 {
+    text-align: center;
+    color: #ff670f;
+ }
+
+ #contenido p {
+    margin-bottom: 30px;
+    font-family: arial;
+    font-size: 18px;
+    text-align: justify;
+    margin: 0%auto;
+ }
+
+ .img-izq {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border: 1 solid #ccc;
+    padding: 5px;
+ }
+
+ #contenido {
+    width: 900px;
+    min-height: 700px;
+    background: #fff;
+    float: top;
+    padding-left: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+ }
+
+ footer {
+    max-width: 1000px;
+    background: #000;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 18px;
+    border-radius: 0 0 20px 20px;
+ }
+
+ @keyframes entradalogo {
+    0% {
+        transform: translateY(-200px);
+    }
+ }
+
+ @keyframes rotacion {
+    0% {
+        transform: rotate(270deg);
+    }
+ }
