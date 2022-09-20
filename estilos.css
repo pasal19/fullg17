@@ -1,34 +1,41 @@
 *{
-    margin: 0;
-    padding: 0;
-    }
-    
-    body{
-    background: #ab4493;
-    padding: 20px;
-    }
-    
-    header {
-    max-height: 195px;
-    max-width: 1000px;
-    min-height: 130px;
-    margin: 0 auto;
-    border-radius: 20px 20px 0 0;
-    
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+36,6d0019+95 */
-    background: #a90329; /* Old browsers */
-    background: -moz-linear-gradient(top,  #a90329 36%, #6d0019 95%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #a90329 36%,#6d0019 95%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #a90329 36%,#6d0019 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
-    
-    }
-    
-    
-    #logo{
-    width: 320px;
-    float: left;
-    margin-top: 20px;
-    margin-left: 20px;
-    animation: 1s entradalogo 1;
-    }
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100%; 
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #ab4493; 
+	padding: 20px;
+}
+
+header {
+	max-height: 195px;
+	max-width: 1000px;
+	min-height: 130px;
+	margin: 0 auto;
+	border-radius: 20px 20px 0 0;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+36,6d0019+95 */
+	background: #a90329; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a90329 36%, #6d0019 95%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #a90329 36%,#6d0019 95%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #a90329 36%,#6d0019 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+#logo{
+	width: 320px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	animation: 1s entradalogo 1;
+}
+
+
+#logo img:hover {
+	filter: grayscale(100%);
+}
