@@ -19,23 +19,34 @@ header {
 	margin: 0 auto;
 	border-radius: 20px 20px 0 0;
 	
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff670f+12,ff670f+100&0.69+43,1+99 */
+background: -moz-linear-gradient(top,  rgba(255,103,15,0.69) 12%, rgba(255,103,15,0.69) 43%, rgba(255,103,15,1) 99%, rgba(255,103,15,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,103,15,0.69) 12%,rgba(255,103,15,0.69) 43%,rgba(255,103,15,1) 99%,rgba(255,103,15,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,103,15,0.69) 12%,rgba(255,103,15,0.69) 43%,rgba(255,103,15,1) 99%,rgba(255,103,15,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ff670f', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
 
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+36,6d0019+95 */
-	background: #a90329; /* Old browsers */
-	background: -moz-linear-gradient(top,  #a90329 36%, #6d0019 95%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #a90329 36%,#6d0019 95%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #a90329 36%,#6d0019 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+/*	background: #a90329; /* Old browsers */
+/*	background: -moz-linear-gradient(top,  #a90329 36%, #6d0019 95%); /* FF3.6-15 */
+/*	background: -webkit-linear-gradient(top,  #a90329 36%,#6d0019 95%); /* Chrome10-25,Safari5.1-6 */
+/*	background: linear-gradient(to bottom,  #a90329 36%,#6d0019 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */ 
 
 }
 
 
 #logo{
-	width: 320px;
+	
+	width: 220px;
 	float: left;
-	margin-top: 20px;
+	margin-top: 0px;
 	margin-left: 20px;
 	animation: 1s entradalogo 1;
+
+}
+#logo img{
+	max-width: 500px;
+	
 }
 
 
@@ -126,7 +137,7 @@ footer{
 	--state-hamburguer:scale(1);
 	--state-menu: translate(-100%);
   
-	padding: 40px 0;
+	padding: 0px 0;
 	display: grid;
 	justify-content: space-between;
 	align-items: center;
@@ -158,6 +169,7 @@ footer{
   
   .menu__cierra{
 	transform: var(--state-close);
+	
   }
   
   .nav__icon{
@@ -172,6 +184,7 @@ footer{
 	left: 0;
 	right: 0;
 	padding: 0;
+	margin-bottom: 40px;
   
 	display: grid;
 	align-content: center;
@@ -215,7 +228,15 @@ footer{
   .redes{
 	padding-top: 15px;
 	cursor: pointer;
+	
 	}
+	.redes:hover{
+		border-radius:50%;
+		-webkit-border-radius:50%;
+		box-shadow: 0px 0px 10px 10px #ec731e;
+		 -box-shadow: 10px 10px 20px 20px #ec731e;
+		
+		}
 	aside{
 		width: 30%;
 		padding: 2%;
@@ -267,16 +288,123 @@ footer{
 	
   }
 
- 
-
-@keyframes entradalogo {
+ @keyframes entradalogo {
 	0% {
 	transform: translateY(-200px);
+	transform: rotate(270deg);
+	width: 1200px;
+	
 	}
 }
 
-@keyframes rotacion {
+/*@keyframes rotacion {
 	0% {
 	transform: rotate(270deg);
 	}
 }
+*/
+
+.alert{
+    display: block;
+    padding: 12px 20px;
+    background: #f8d7da;
+    color: #721c24;
+    margin-bottom: 10px;
+    border: 3px solid #f5c6cb;
+    
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+
+
+
+.formulario input[type='text'],
+.formulario textarea{
+	max-height: 195;
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;	
+	display: flex;
+   
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    margin-bottom: 15px;
+    padding: 12px 20px;
+   
+    border: 2px solid rgba(231, 115, 7, 0.877);
+    color: #999;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    outline: 0;
+    
+    
+}
+
+.formulario textarea{
+    
+    min-height: 150px;
+    max-height: 200px;
+    
+}
+
+.formulario input[type='text']:focus,
+.formulario textarea:focus{
+    border: 1px solid #15CF8A;
+    
+}
+
+
+.formulario button{
+    padding: 12px 30px;
+    border: transparent;
+    background: #15CF8A;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+
+@media (max-width: 520px){
+   .conenedor{
+       padding: 40px 20px;
+   }
+
+   .contnido .info,
+   .conenido .formulario{
+       width: 100%;
+       padding: 0px;
+   }
+
+   .contnido .info{
+       margin-bottom: 30px;
+   }
+   #logo img{
+	max-width: 300px;
+   }
+}
+
+@media (max-width: 800px){
+  
+    .conteido .info,
+    .connido .formulario{
+        width: 100%;
+        padding: 0px;
+    }
+ 
+    .contenido .info{
+        margin-bottom: 30px;
+    }
+	#logo img{
+		max-width: 400px;
+	   }
+ }

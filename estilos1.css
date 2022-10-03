@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+
+a{
+    text-decoration: none;
+}
+
+.formulario input{
+    border-radius: 15px;
+}
+.formulario p{
+    display: none;
+}
+.alert{
+    display: block;
+    padding: 12px 20px;
+    background: #f8d7da;
+    color: #721c24;
+    margin-bottom: 10px;
+    border: 3px solid #f5c6cb;
+    
+}
+
+header {
+    max-height: 195px;
+    max-width: 1000px;
+    min-height: 130px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff670f+12,ff670f+100&0.69+43,1+99 */
+background: -moz-linear-gradient(top,  rgba(255,103,15,0.69) 12%, rgba(255,103,15,0.69) 43%, rgba(255,103,15,1) 99%, rgba(255,103,15,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,103,15,0.69) 12%,rgba(255,103,15,0.69) 43%,rgba(255,103,15,1) 99%,rgba(255,103,15,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,103,15,0.69) 12%,rgba(255,103,15,0.69) 43%,rgba(255,103,15,1) 99%,rgba(255,103,15,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ff670f', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+36,6d0019+95 */
+/*  background: #a90329; /* Old browsers */
+/*  background: -moz-linear-gradient(top,  #a90329 36%, #6d0019 95%); /* FF3.6-15 */
+/*  background: -webkit-linear-gradient(top,  #a90329 36%,#6d0019 95%); /* Chrome10-25,Safari5.1-6 */
+/*  background: linear-gradient(to bottom,  #a90329 36%,#6d0019 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */ 
+
+}
+
+#logo{
+    
+    width: 220px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 20px;
+    animation: 1s entradalogo 1;
+
+}
+#logo img{
+    max-width: 500px;
+    
+}
+
+#logo img:hover {
+    filter: grayscale(100%);
+}
+
+body{
+    padding: 20px;
+    height: 100%; 
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #ab4493; 
+}
+
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 40px;
+    margin: 0px auto;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.contenedor h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #15CF8A;
+}
+
+.contenido{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.contenido .info,
+.contenido .formulario{
+    width: 50%;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+
+.nav{
+    --state-close: scale(0);
+    --state-hamburguer:scale(1);
+    --state-menu: translate(-100%);
+  
+    padding: 0px 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+  }
+  
+  .nav:target{
+    --state-menu: translate(0);
+    --state-close: scale(1);
+    --state-hamburguer:scale(0);
+  }
+  
+  .nav__logo{
+    font-size: 2.5rem;
+    z-index: 1;
+  }
+  
+  .menu__abre, 
+  .menu__cierra{
+    cursor: pointer;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    transition: .4s transform;
+  }
+  
+  .menu__abre{
+    transform: var(--state-hamburguer);
+  }
+  
+  .menu__cierra{
+    transform: var(--state-close);
+  }
+  
+  .nav__icon{
+    width: 40px;
+  }
+  
+  .nav__links{
+    
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin-bottom: 40px;
+  
+    display: grid;
+    align-content: center;
+    gap: 2em;
+    padding-left: 5%;
+  
+    transform: var(--state-menu);
+    transition: .3s transform;
+    background: rgba(211, 84, 0, .7);
+  }
+  
+  .nav__item{
+    list-style: none;
+    --clippy: polygon(0 1%, 0 0, 0 100%, 0% 100%);
+
+    
+  }
+  
+  .nav__link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  .nav__item::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+  }
+  
+  .nav__item:hover{
+    --clippy: polygon(0 1%, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  @media (min-width:868px) {
+    .nav{
+        --state-hamburguer:scale(0);
+        --state-menu: translate(0);
+}
+    
+    .nav:target{
+        --state-close: scale(0);
+        
+        
+    }
+  
+    .nav__links{
+        padding: 0;
+        background-color: unset;
+        position: unset;
+        gap: 1.5em;
+        grid-auto-flow: column;
+    
+        transform: unset;
+      
+        grid-column: -2/-1;
+        grid-row: 1/2;
+      
+    }
+    
+  
+    .nav__link{
+        font-size: 1rem;
+        letter-spacing: none;
+        
+        
+    }
+    
+  }
+
+ 
+
+@keyframes entradalogo {
+    0% {
+    transform: translateY(-200px);
+    }
+}
+
+@keyframes rotacion {
+    0% {
+    transform: rotate(270deg);
+    }
+}
+
+footer{
+    max-width: 1000px;
+    background: #000;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 18px;
+}
+.redes{
+    padding-top: 15px;
+    cursor: pointer;
+    
+    }
+    .redes:hover{
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        box-shadow: 0px 0px 10px 10px #ec731e;
+        -webkit-box-shadow: 10px 10px 10px 10px #ec731e;
+        
+        }
+/* ===========================================
+Estilos info
+============================================== */
+.info{
+    padding-left: 10px;
+}
+
+.info .col{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.info .col p{
+    color: #999;
+}
+
+
+/* ===========================================
+Estilos formulario
+============================================== */
+
+.formulario{
+    padding-left: 10px;
+    
+}
+
+.formulario input[type='text'],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(231, 115, 7, 0.877);
+    color: #999;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    outline: 0;
+    
+    
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+    
+}
+
+.formulario input[type='text']:focus,
+.formulario textarea:focus{
+    border: 1px solid #15CF8A;
+    
+}
+
+.formulario button{
+    padding: 12px 30px;
+    border: transparent;
+    background: #15CF8A;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+button{
+    padding: 12px 30px;
+    border: transparent;
+    background: #15CF8A;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    align-self: center;
+    
+}
+
+
+@media (max-width: 520px){
+   .contenedor{
+       padding: 40px 20px;
+   }
+
+   .contenido .info,
+   .contenido .formulario{
+       width: 100%;
+       padding: 0px;
+   }
+
+   .contenido .info{
+       margin-bottom: 30px;
+   }
+   #logo img{
+    max-width: 300px;
+   }
+}
+
+@media (max-width: 800px){
+  
+    .contenido .info,
+    .contenido .formulario{
+        width: 100%;
+        padding: 0px;
+    }
+ 
+    .contenido .info{
+        margin-bottom: 30px;
+    }
+    #logo img{
+        max-width: 400px;
+       }
+ }
+

@@ -2,13 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html y CSS</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="shorcut icon" href="img/html5.png">
     
-</head> 
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
 <body>
     <header>
         <section id="logo">
@@ -27,7 +25,7 @@
                     <a href="acerca de.html" class="nav__link">Acerca de</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Contacto</a>
+                    <a href="contacto.html" class="nav__link">Contacto</a>
                 </li>
 
             </ul>
@@ -43,33 +41,51 @@
         </nav>
     </header>
     
-        <section id="contenedor">
-            <section id="contenido">
-                                
-                <h2>Prueba HTML5 y CSS3 - CONTACTO</h2>
-                <img src="img/imagen1.jpg" class="img-izq">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis qui nesciunt, deserunt tempore. Non quos culpa illum modi, rem iusto reiciendis eum nemo ea vitae placeat laborum incidunt voluptatem sit ullam natus est? Animi commodi recusandae quia doloremque alias provident officiis. Est, ex. Odit animi ullam pariatur perferendis alias veniam, reiciendis dolore amet placeat impedit deleniti laboriosam fuga, magnam velit?
-                </p>
-                <aside>
-                    <p>esto es un aside de prueba Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi fugit, laborum mollitia repellat ipsa omnis commodi quis voluptate? Corporis impedit aspernatur natus qui voluptatibus nulla repellendus ipsa et debitis?</p>
-                </aside>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing, 
-                    elit. Esse enim reiciendis recusandae adipisci pariatur deleniti cum, nulla error deserunt asperiores animi hic, doloribus debitis, quas numquam. Rerum laboriosam totam laudantium consequuntur libero commodi culpa excepturi unde expedita autem dolores, aliquam possimus quae nam veritatis cupiditate, id nulla quisquam sapiente soluta vero asperiores consequatur exercitationem, quaerat pariatur. Aut pariatur ipsum nisi dolorum error optio. Harum, ab. Consectetur repellendus expedita ea soluta, nihil officia cupiditate velit! Tempora mollitia ipsum repellat quisquam repellendus.
-                </p>
+    <div class="contenedor">
+
+        <h1>Formulario Contacto</h1>
+
+        <div class="contenido">
+
+            <div class="info">
+
+                <div class="col">
+                    
+                    <p>Direccion </p>
+                </div>
+
+                <div class="col">
+                    
+                    <p>yoyoyo@yoyoyo.com</p>
+                </div>
+
+                <div class="col">
+                    
+                    <p>(011) 1111-1111 <br> (011) 2222-2222</p>
+                </div>
+
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure asperiores laborum, aliquam et exercitationem placeat architecto fugiat non nam ratione tempore est!
-                     Eveniet quasi dicta ut quos fugit vitae porro, doloribus excepturi, commodi temporibus itaque aspernatur esse voluptates quaerat necessitatibus atque incidunt fuga dolores delectus ducimus amet sequi
-                      dolore eius voluptatem. Hic reprehenderit quia dolor repellendus, soluta, quibusdam quis.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quo, sint non quibusdam suscipit illum, aliquam temporibus aspernatur mollitia similique tenetur voluptatum doloremque eos dignissimos necessitatibus vitae sit, nam provident Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi perspiciatis temporibus optio. Ipsam distinctio perspiciatis praesentium facilis minus veritatis doloribus fugit maiores quos soluta illo, ratione laudantium possimus officiis. Et!
-                </p>
-                
-                
-                
-            </section>
-            
-        </section>
+            </div>
+            <form action="https://formsubmit.co/a2003f2a358325d03d56445694a672d8" method="POST" class="formulario">
         
-    
+
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                <input type="text" name="correo" placeholder="Correo electrónico" id="correo">
+                <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                <button type="button" onclick="validarFormulario()" >Enviar</button>
+                
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/enviado.html">
+                <input type="hidden" name="_captcha" value="false">
+                
+                
+
+            </form>
+
+        </div>
+
+    </div>
+
     <footer>
         Derechos reservados 2022 <br>
         Disenado por mi <br>
@@ -83,6 +99,8 @@
 
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="correo.js"></script>
 </body>
 </html>
 
