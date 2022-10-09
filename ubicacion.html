@@ -2,11 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Formulario de contacto</title>
-    <link rel="stylesheet" href="estilos1.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html y CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shorcut icon" href="img/html5.png">
+    
+</head> 
 <body>
     <header>
         <section id="logo">
@@ -19,7 +21,7 @@
                     <a href="index.html" class="nav__link">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="ubicacion.html" class="nav__link">Ubicanos</a>
+                    <a href="#" class="nav__link">Ubicanos</a>
                 </li>
                 <li class="nav__item">
                     <a href="acerca de.html" class="nav__link">Acerca de</a>
@@ -41,51 +43,21 @@
         </nav>
     </header>
     
-    <div class="contenedor">
-
-        <h1>Formulario Contacto</h1>
-
-        <div class="contenido">
-
-            <div class="info">
-
-                <div class="col">
-                    
-                    <p>Av. Diaz Velez 2200 </p>
-                </div>
-
-                <div class="col">
-                    
-                    <p>alguien@alguien.com</p>
-                </div>
-
-                <div class="col">
-                    
-                    <p>(011) 1111-1111 <br> (011) 2222-2222</p>
-                </div>
-
+        <section id="contenedor">
+            <section id="contenido">
+                                
+                <h2 id="ubica">UBICACION</h2>
+                <h1>Av. Diaz Velez 2200</h1>
+                <iframe  id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5833.903798966251!2d-58.422413084313305!3d-34.61332077211105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665346305785!5m2!1ses-419!2sar" width="500" height="450" style="border:15;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 
                 
-            </div>
-            <form action="https://formsubmit.co/a2003f2a358325d03d56445694a672d8" method="POST" class="formulario">
+                
+                
+            </section>
+            
+        </section>
         
-
-                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-                <input type="text" name="correo" placeholder="Correo electrónico" id="correo">
-                <input type="text" name="asunto" placeholder="Asunto" id="asunto">
-                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
-                <button type="button" onclick="validarFormulario()" >Enviar</button>
-                
-                <input type="hidden" name="_next" value="http://127.0.0.1:5501/enviado.html">
-                <input type="hidden" name="_captcha" value="false">
-                
-                
-
-            </form>
-
-        </div>
-
-    </div>
-
+    
     <footer>
         Derechos reservados 2022 <br>
         Disenado por mi <br>
@@ -99,7 +71,6 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="correo.js"></script>
 </body>
 </html>
+
