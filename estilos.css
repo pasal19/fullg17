@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0px;
+	box-sizing: border-box;
 }
 
 body{
@@ -36,7 +37,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ff670f', e
 
 #logo{
 	
-	width: 220px;
+	width: auto;
 	float: left;
 	margin-top: 0px;
 	margin-left: 20px;
@@ -45,6 +46,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ff670f', e
 }
 #logo img{
 	max-width: 500px;
+	
 	
 }
 
@@ -58,14 +60,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ff670f', e
 	background: #fff;
 	margin: 0 auto;
 	display: flex;
-	box-sizing: border-box;
+	
 }
 
 #contenido h2{
 	text-align: center;
 	margin-bottom: 30px;
 }
+#ubica{
+	font-size: 30px;
+	color: dimgray;
+	margin-top: 20px;
+	text-shadow: 2px 2px 7px #000;
+	
+}
 
+#contenido h1{
+	
+	display: inline-flexbox;
+	text-align: center;
+	margin-bottom: 10px;
+}
 .mapa1{
 	overflow:hidden;
 	padding-bottom:56.25%;
@@ -83,6 +98,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ff670f', e
 	position:absolute;
 
 }
+iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 
 #contenido p{
 	margin-bottom: 30px;
@@ -105,6 +128,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ff670f', e
 	padding: 5px;
 	
 	
+	
 }
 
 
@@ -112,8 +136,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ff670f', e
 	width: 1000px;
 	min-height: 700px;
 	background: #fff;
-	padding: 30px;
-	box-sizing: border-box;
+	padding: 20px;
 	margin: 0 auto;
 }
 

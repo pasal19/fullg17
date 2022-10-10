@@ -26,7 +26,6 @@ a{
 }
 
 header {
-    max-height: 195px;
     max-width: 1000px;
     min-height: 130px;
     margin: 0 auto;
@@ -95,6 +94,10 @@ body{
     width: 100%;
     overflow: hidden;
     flex-wrap: wrap;
+}
+
+h2{
+    font-size: 50px;
 }
 
 .contenido .info,
